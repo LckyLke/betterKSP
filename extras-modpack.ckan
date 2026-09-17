@@ -1,7 +1,7 @@
 {
     "spec_version": "v1.34",
-    "identifier": "SotaKspExtras",
-    "name": "SOTA KSP Extras (optional, heavy)",
+    "identifier": "betterKSP-Extras",
+    "name": "betterKSP - extras (optional, heavy)",
     "abstract": "Optional heavy add-ons: real rockets, a shuttle, a second star system, and realism overhauls. Install after the main pack.",
     "author": [
         "LckyLke"

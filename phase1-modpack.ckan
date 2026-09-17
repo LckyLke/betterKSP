@@ -1,8 +1,8 @@
 {
     "spec_version": "v1.34",
-    "identifier": "SotaKspPhase1",
-    "name": "SOTA KSP Modpack - Phase 1 (small mods, play now)",
-    "abstract": "Small and cached mods first. Phase 2 is sota-modpack.ckan.",
+    "identifier": "betterKSP-Phase1",
+    "name": "betterKSP - phase 1 (small mods, play now)",
+    "abstract": "Small and cached mods first. The full pack is sota-modpack.ckan.",
     "author": [
         "LckyLke"
     ],
