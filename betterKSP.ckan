@@ -1,8 +1,8 @@
 {
     "spec_version": "v1.34",
     "identifier": "betterKSP",
-    "name": "betterKSP - full pack",
-    "abstract": "State-of-the-art visuals, sound, quality of life, and Nertea part packs for KSP 1.12.5. Curated 2026-09-17 from CKAN download counts and JonnyOThan's recommendations.",
+    "name": "betterKSP",
+    "abstract": "State-of-the-art visuals, sound, quality of life, and Nertea part packs for KSP 1.12.5.",
     "author": [
         "LckyLke"
     ],

@@ -1,51 +1,32 @@
 # betterKSP
 
-A curated, state-of-the-art mod pack for **Kerbal Space Program 1.12.5**. It targets modern
-graphics, sound, quality of life, and the Nertea part packs. It installs in one step with
-[CKAN](https://github.com/KSP-CKAN/CKAN), the standard KSP mod manager.
-
-The selection uses the CKAN download counts of September 2026 and the recommendations of
-JonnyOThan (maintainer of FreeIva and RasterPropMonitor).
+A state-of-the-art mod pack for **Kerbal Space Program 1.12.5**: modern graphics, sound, quality of life,
+and the Nertea part packs. One-step install with [CKAN](https://github.com/KSP-CKAN/CKAN).
 
 ## Install
 
-You need KSP 1.12.5 and CKAN. Then choose one of these methods.
+**CKAN GUI:** download `betterKSP.ckan`, then click **File > Install from .ckan** and select it.
 
-### CKAN GUI (Windows, macOS, Linux)
-
-1. Download `sota-modpack.ckan` from this repository.
-2. Open CKAN and select your KSP install.
-3. Click **File > Install from .ckan** and select the file.
-4. Accept the list of mods. CKAN downloads about 8 GB.
-
-### CKAN command line (one line)
+**Command line:**
 
 ```sh
-ckan install -c https://raw.githubusercontent.com/LckyLke/betterKSP/main/sota-modpack.ckan --headless
+ckan install -c https://raw.githubusercontent.com/LckyLke/betterKSP/main/betterKSP.ckan --headless
 ```
 
-### Slow connection: play sooner
-
-Install `phase1-modpack.ckan` first. It holds the small mods (about 1.5 GB). Start the game with it.
-Then install `sota-modpack.ckan` while you play. It adds the large texture and part packs. Restart the game after it finishes.
-
-### Optional extras
-
-`extras-modpack.ckan` adds heavy extras: Bluedog Design Bureau (real rockets), the Space Shuttle,
-the Kcalbeloh star system, Minor Planets Expansion, and Kerbal Konstructs with KSC Extended.
+The full pack downloads about 8 GB. Parallax Continued and Outer Parallax make up about 5 GB of that.
+To skip them, use `betterKSP-lite.ckan` instead. To add the optional heavy extras, use `betterKSP-extras.ckan`.
 
 ## After the install
 
-* Set **Graphics > Terrain Detail** to **High**. Parallax Continued needs it.
-* Set **Terrain scatter** off. Parallax Continued draws its own scatters.
+* Set **Graphics > Terrain Detail** to **High** and **Terrain scatter** off (Parallax Continued).
 * Set anti-aliasing off in KSP and in Scatterer. Use the TUFX temporal anti-aliasing instead.
-* **Linux**: run the game through Proton with `-force-d3d11 -popupwindow %command%` as launch options.
-  The Parallax Continued author recommends this. The native OpenGL build can crash with Parallax Continued.
+* **Linux:** run the game through Proton with launch options `-force-d3d11 -popupwindow %command%`.
+  The native OpenGL build can crash with Parallax Continued.
+* Optional, not on CKAN: Blackrack's **True Volumetric Clouds** (Patreon). Remove `AstronomersVisualPack` first.
 
-### Manual upgrade that is not on CKAN
+## Update
 
-Blackrack's **True Volumetric Clouds** (Patreon, version 3 is free) replaces the Astronomer's Visual Pack clouds.
-Remove `AstronomersVisualPack` before you install it.
+`ckan upgrade --all` updates every mod. The pack pins no versions.
 
 ## Mod list
 
@@ -154,7 +135,7 @@ It feature... |
 | `OuterParallax` | Outer Parallax Common Files | Files common to OuterParallax-OPM and OuterParallax-MPE |
 | `OuterParallax-OPM` | OuterParallax-OPM | Adds Parallax Continued configs for OPM with custom assets. |
 
-### Extras (optional pack)
+### Extras (`betterKSP-extras.ckan`)
 
 | CKAN identifier | Name | What it does |
 |---|---|---|
@@ -166,10 +147,6 @@ It feature... |
 | `KerbalKonstructs` | Kerbal Konstructs | New buildings and launch sites |
 | `KSCExtended` | KSC Extended | This is a collaboration between me and Omega482 to give you the best possible KSC exper... |
 
-## Update the pack
-
-Run `ckan upgrade --all` to update every mod. The pack file pins no versions, so CKAN installs the newest compatible releases.
-
 ## License
 
-The pack files in this repository are released under CC0 1.0. Each mod keeps its own license.
+CC0 1.0 for the pack files. Each mod keeps its own license.

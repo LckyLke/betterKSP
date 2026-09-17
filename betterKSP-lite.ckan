@@ -1,8 +1,8 @@
 {
     "spec_version": "v1.34",
-    "identifier": "betterKSP-Phase1",
-    "name": "betterKSP - phase 1 (small mods, play now)",
-    "abstract": "Small and cached mods first. The full pack is sota-modpack.ckan.",
+    "identifier": "betterKSP-lite",
+    "name": "betterKSP lite",
+    "abstract": "betterKSP without Parallax Continued and Outer Parallax. Saves about 5 GB of downloads.",
     "author": [
         "LckyLke"
     ],
@@ -67,6 +67,12 @@
             "name": "EnvironmentalVisualEnhancements"
         },
         {
+            "name": "AstronomersVisualPack"
+        },
+        {
+            "name": "AVP-8kTextures"
+        },
+        {
             "name": "DistantObject"
         },
         {
@@ -77,6 +83,18 @@
         },
         {
             "name": "PlanetShine-Config-Default"
+        },
+        {
+            "name": "ReStock"
+        },
+        {
+            "name": "ReStockPlus"
+        },
+        {
+            "name": "RocketSoundEnhancement"
+        },
+        {
+            "name": "RocketSoundEnhancement-Config-Default"
         },
         {
             "name": "Chatterer"
@@ -166,6 +184,12 @@
             "name": "NearFutureConstruction"
         },
         {
+            "name": "NearFutureSpacecraft"
+        },
+        {
+            "name": "NearFutureLaunchVehicles"
+        },
+        {
             "name": "NearFutureAeronautics"
         },
         {
@@ -178,13 +202,28 @@
             "name": "CryoTanks"
         },
         {
+            "name": "KerbalAtomics"
+        },
+        {
             "name": "HeatControl"
+        },
+        {
+            "name": "FarFutureTechnologies"
+        },
+        {
+            "name": "StationPartsExpansionRedux"
+        },
+        {
+            "name": "PlanetsideExplorationTechnologies"
         },
         {
             "name": "ModularLaunchPads"
         },
         {
             "name": "SpaceXLegs"
+        },
+        {
+            "name": "OuterPlanetsMod"
         }
     ]
 }

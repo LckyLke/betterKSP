@@ -1,8 +1,8 @@
 {
     "spec_version": "v1.34",
-    "identifier": "betterKSP-Extras",
-    "name": "betterKSP - extras (optional, heavy)",
-    "abstract": "Optional heavy add-ons: real rockets, a shuttle, a second star system, and realism overhauls. Install after the main pack.",
+    "identifier": "betterKSP-extras",
+    "name": "betterKSP extras",
+    "abstract": "Optional heavy add-ons for betterKSP: real rockets, the Space Shuttle, a second star system, and an extended KSC.",
     "author": [
         "LckyLke"
     ],
