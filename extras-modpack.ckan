@@ -1,0 +1,37 @@
+{
+    "spec_version": "v1.34",
+    "identifier": "SotaKspExtras",
+    "name": "SOTA KSP Extras (optional, heavy)",
+    "abstract": "Optional heavy add-ons: real rockets, a shuttle, a second star system, and realism overhauls. Install after the main pack.",
+    "author": [
+        "LckyLke"
+    ],
+    "version": "1.0.0",
+    "kind": "metapackage",
+    "license": "unknown",
+    "ksp_version_min": "1.12.5",
+    "ksp_version_max": "1.12.5",
+    "depends": [
+        {
+            "name": "BluedogDB"
+        },
+        {
+            "name": "ShuttleOrbiterConstructionKit"
+        },
+        {
+            "name": "KcalbelohSystem"
+        },
+        {
+            "name": "MinorPlanetsExpansion"
+        },
+        {
+            "name": "OuterParallax-MPE"
+        },
+        {
+            "name": "KerbalKonstructs"
+        },
+        {
+            "name": "KSCExtended"
+        }
+    ]
+}

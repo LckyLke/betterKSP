@@ -1,0 +1,238 @@
+{
+    "spec_version": "v1.34",
+    "identifier": "SotaKspModpack",
+    "name": "SOTA KSP Modpack (lukef)",
+    "abstract": "State-of-the-art visuals, sound, quality of life, and Nertea part packs for KSP 1.12.5. Curated 2026-09-17 from CKAN download counts and JonnyOThan's recommendations.",
+    "author": [
+        "LckyLke"
+    ],
+    "version": "1.0.0",
+    "kind": "metapackage",
+    "license": "unknown",
+    "ksp_version_min": "1.12.5",
+    "ksp_version_max": "1.12.5",
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "name": "KSPCommunityFixes"
+        },
+        {
+            "name": "Harmony2"
+        },
+        {
+            "name": "KSPBurst"
+        },
+        {
+            "name": "BurstPQS"
+        },
+        {
+            "name": "Shabby"
+        },
+        {
+            "name": "ClickThroughBlocker"
+        },
+        {
+            "name": "ToolbarController"
+        },
+        {
+            "name": "Kopernicus"
+        },
+        {
+            "name": "ParallaxContinued"
+        },
+        {
+            "name": "Deferred"
+        },
+        {
+            "name": "TUFX"
+        },
+        {
+            "name": "Shaddy"
+        },
+        {
+            "name": "Firefly"
+        },
+        {
+            "name": "TexturesUnlimited"
+        },
+        {
+            "name": "Waterfall"
+        },
+        {
+            "name": "StockWaterfallEffects"
+        },
+        {
+            "name": "Scatterer"
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements"
+        },
+        {
+            "name": "AstronomersVisualPack"
+        },
+        {
+            "name": "AVP-8kTextures"
+        },
+        {
+            "name": "DistantObject"
+        },
+        {
+            "name": "DistantObject-default"
+        },
+        {
+            "name": "PlanetShine"
+        },
+        {
+            "name": "PlanetShine-Config-Default"
+        },
+        {
+            "name": "ReStock"
+        },
+        {
+            "name": "ReStockPlus"
+        },
+        {
+            "name": "RocketSoundEnhancement"
+        },
+        {
+            "name": "RocketSoundEnhancement-Config-Default"
+        },
+        {
+            "name": "Chatterer"
+        },
+        {
+            "name": "ShipEffectsContinued"
+        },
+        {
+            "name": "MechJeb2"
+        },
+        {
+            "name": "KerbalEngineerRedux"
+        },
+        {
+            "name": "RCSBuildAid"
+        },
+        {
+            "name": "TrackingStationEvolved"
+        },
+        {
+            "name": "NavballDockAlignIndCE"
+        },
+        {
+            "name": "VABOrganizer"
+        },
+        {
+            "name": "EditorExtensionsRedux"
+        },
+        {
+            "name": "Trajectories"
+        },
+        {
+            "name": "TransferWindowPlanner"
+        },
+        {
+            "name": "DockingPortAlignmentIndicator"
+        },
+        {
+            "name": "BetterTimeWarpCont"
+        },
+        {
+            "name": "HangerExtenderExtended"
+        },
+        {
+            "name": "EasyVesselSwitch"
+        },
+        {
+            "name": "xScienceContinued"
+        },
+        {
+            "name": "ScienceAlert"
+        },
+        {
+            "name": "SCANsat"
+        },
+        {
+            "name": "KAS"
+        },
+        {
+            "name": "FreeIva"
+        },
+        {
+            "name": "RasterPropMonitor"
+        },
+        {
+            "name": "AtmosphereAutopilot"
+        },
+        {
+            "name": "HullcamVDSContinued"
+        },
+        {
+            "name": "TweakScaleRescaled"
+        },
+        {
+            "name": "CommunityTechTree"
+        },
+        {
+            "name": "NearFuturePropulsion"
+        },
+        {
+            "name": "NearFutureSolar"
+        },
+        {
+            "name": "NearFutureElectrical"
+        },
+        {
+            "name": "NearFutureConstruction"
+        },
+        {
+            "name": "NearFutureSpacecraft"
+        },
+        {
+            "name": "NearFutureLaunchVehicles"
+        },
+        {
+            "name": "NearFutureAeronautics"
+        },
+        {
+            "name": "NearFutureExploration"
+        },
+        {
+            "name": "CryoEngines"
+        },
+        {
+            "name": "CryoTanks"
+        },
+        {
+            "name": "KerbalAtomics"
+        },
+        {
+            "name": "HeatControl"
+        },
+        {
+            "name": "FarFutureTechnologies"
+        },
+        {
+            "name": "StationPartsExpansionRedux"
+        },
+        {
+            "name": "PlanetsideExplorationTechnologies"
+        },
+        {
+            "name": "ModularLaunchPads"
+        },
+        {
+            "name": "SpaceXLegs"
+        },
+        {
+            "name": "OuterPlanetsMod"
+        },
+        {
+            "name": "OuterParallax"
+        },
+        {
+            "name": "OuterParallax-OPM"
+        }
+    ]
+}

@@ -1,0 +1,190 @@
+{
+    "spec_version": "v1.34",
+    "identifier": "SotaKspPhase1",
+    "name": "SOTA KSP Modpack - Phase 1 (small mods, play now)",
+    "abstract": "Small and cached mods first. Phase 2 is sota-modpack.ckan.",
+    "author": [
+        "LckyLke"
+    ],
+    "version": "1.0.0",
+    "kind": "metapackage",
+    "license": "unknown",
+    "ksp_version_min": "1.12.5",
+    "ksp_version_max": "1.12.5",
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "name": "KSPCommunityFixes"
+        },
+        {
+            "name": "Harmony2"
+        },
+        {
+            "name": "KSPBurst"
+        },
+        {
+            "name": "BurstPQS"
+        },
+        {
+            "name": "Shabby"
+        },
+        {
+            "name": "ClickThroughBlocker"
+        },
+        {
+            "name": "ToolbarController"
+        },
+        {
+            "name": "Kopernicus"
+        },
+        {
+            "name": "Deferred"
+        },
+        {
+            "name": "TUFX"
+        },
+        {
+            "name": "Shaddy"
+        },
+        {
+            "name": "Firefly"
+        },
+        {
+            "name": "TexturesUnlimited"
+        },
+        {
+            "name": "Waterfall"
+        },
+        {
+            "name": "StockWaterfallEffects"
+        },
+        {
+            "name": "Scatterer"
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements"
+        },
+        {
+            "name": "DistantObject"
+        },
+        {
+            "name": "DistantObject-default"
+        },
+        {
+            "name": "PlanetShine"
+        },
+        {
+            "name": "PlanetShine-Config-Default"
+        },
+        {
+            "name": "Chatterer"
+        },
+        {
+            "name": "ShipEffectsContinued"
+        },
+        {
+            "name": "MechJeb2"
+        },
+        {
+            "name": "KerbalEngineerRedux"
+        },
+        {
+            "name": "RCSBuildAid"
+        },
+        {
+            "name": "TrackingStationEvolved"
+        },
+        {
+            "name": "NavballDockAlignIndCE"
+        },
+        {
+            "name": "VABOrganizer"
+        },
+        {
+            "name": "EditorExtensionsRedux"
+        },
+        {
+            "name": "Trajectories"
+        },
+        {
+            "name": "TransferWindowPlanner"
+        },
+        {
+            "name": "DockingPortAlignmentIndicator"
+        },
+        {
+            "name": "BetterTimeWarpCont"
+        },
+        {
+            "name": "HangerExtenderExtended"
+        },
+        {
+            "name": "EasyVesselSwitch"
+        },
+        {
+            "name": "xScienceContinued"
+        },
+        {
+            "name": "ScienceAlert"
+        },
+        {
+            "name": "SCANsat"
+        },
+        {
+            "name": "KAS"
+        },
+        {
+            "name": "FreeIva"
+        },
+        {
+            "name": "RasterPropMonitor"
+        },
+        {
+            "name": "AtmosphereAutopilot"
+        },
+        {
+            "name": "HullcamVDSContinued"
+        },
+        {
+            "name": "TweakScaleRescaled"
+        },
+        {
+            "name": "CommunityTechTree"
+        },
+        {
+            "name": "NearFuturePropulsion"
+        },
+        {
+            "name": "NearFutureSolar"
+        },
+        {
+            "name": "NearFutureElectrical"
+        },
+        {
+            "name": "NearFutureConstruction"
+        },
+        {
+            "name": "NearFutureAeronautics"
+        },
+        {
+            "name": "NearFutureExploration"
+        },
+        {
+            "name": "CryoEngines"
+        },
+        {
+            "name": "CryoTanks"
+        },
+        {
+            "name": "HeatControl"
+        },
+        {
+            "name": "ModularLaunchPads"
+        },
+        {
+            "name": "SpaceXLegs"
+        }
+    ]
+}
