@@ -13,7 +13,7 @@ and the Nertea part packs. One-step install with [CKAN](https://github.com/KSP-C
 ckan install -c https://raw.githubusercontent.com/LckyLke/betterKSP/main/betterKSP.ckan --headless
 ```
 
-The full pack downloads about 8 GB. Parallax Continued and Outer Parallax make up about 5 GB of that.
+The full pack downloads about 8 GB. Parallax Continued and Outer Parallax make up about 4 GB of that.
 To skip them, use `betterKSP-lite.ckan` instead. To add the optional heavy extras, use `betterKSP-extras.ckan`.
 
 ## After the install
