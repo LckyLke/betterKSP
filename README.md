@@ -1,9 +1,45 @@
 # betterKSP
 
 A mod pack for **Kerbal Space Program 1.12.5**: modern graphics, sound, quality of life,
-and the Nertea part packs. One-step install with [CKAN](https://github.com/KSP-CKAN/CKAN).
+and the Nertea part packs. One-step install with [CKAN](https://github.com/KSP-CKAN/CKAN) through `install.sh`.
 
 ## Install
+
+Run `install.sh`. It does both steps: it installs the mods with CKAN, and it repairs the stock
+craft files that a modded install cannot load.
+
+```sh
+curl -fsSLO https://raw.githubusercontent.com/LckyLke/betterKSP/main/install.sh
+sh install.sh
+```
+
+Or clone the repository:
+
+```sh
+git clone https://github.com/LckyLke/betterKSP.git
+cd betterKSP
+./install.sh
+```
+
+Variants:
+
+```sh
+./install.sh lite     # skip Parallax Continued and Outer Parallax, about 4 GB less
+./install.sh extras   # add the optional heavy extras
+```
+
+The full pack downloads about 8 GB. Parallax Continued and Outer Parallax make up about 4 GB of that.
+
+The script finds a Steam install of KSP by itself. Pass the path as the second argument if yours
+sits somewhere else:
+
+```sh
+./install.sh "" "/path/to/Kerbal Space Program"
+```
+
+### CKAN on its own
+
+The `.ckan` files also work directly in CKAN. They install the mods and nothing else.
 
 **CKAN GUI:** download `betterKSP.ckan`, then click **File > Install from .ckan** and select it.
 
@@ -13,8 +49,14 @@ and the Nertea part packs. One-step install with [CKAN](https://github.com/KSP-C
 ckan install -c https://raw.githubusercontent.com/LckyLke/betterKSP/main/betterKSP.ckan --headless
 ```
 
-The full pack downloads about 8 GB. Parallax Continued and Outer Parallax make up about 4 GB of that.
-To skip them, use `betterKSP-lite.ckan` instead. To add the optional heavy extras, use `betterKSP-extras.ckan`.
+Both routes skip step 2. Run `fix-craft.sh` afterwards, or 23 stock craft will not load:
+
+```sh
+curl -fsSLO https://raw.githubusercontent.com/LckyLke/betterKSP/main/fix-craft.sh
+sh fix-craft.sh
+```
+
+See [Known issues](#known-issues).
 
 ## After the install
 
@@ -23,8 +65,8 @@ To skip them, use `betterKSP-lite.ckan` instead. To add the optional heavy extra
 * **Linux:** run the game through Proton with launch options `-force-d3d11 -popupwindow %command%`.
   The native OpenGL build can crash with Parallax Continued.
 * Optional, not on CKAN: Blackrack's **True Volumetric Clouds** (Patreon). Remove `AstronomersVisualPack` first.
-* Run `./fix-craft.sh` to repair the stock craft files. See [Known issues](#known-issues).
-  `install.sh` already does this for you.
+* `install.sh` already repaired the stock craft files. Run `./fix-craft.sh` again after a game
+  update, or after "Verify integrity of game files". See [Known issues](#known-issues).
 
 ## Update
 
