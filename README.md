@@ -1,6 +1,6 @@
 # betterKSP
 
-A state-of-the-art mod pack for **Kerbal Space Program 1.12.5**: modern graphics, sound, quality of life,
+A mod pack for **Kerbal Space Program 1.12.5**: modern graphics, sound, quality of life,
 and the Nertea part packs. One-step install with [CKAN](https://github.com/KSP-CKAN/CKAN).
 
 ## Install
