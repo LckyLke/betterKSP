@@ -23,6 +23,8 @@ To skip them, use `betterKSP-lite.ckan` instead. To add the optional heavy extra
 * **Linux:** run the game through Proton with launch options `-force-d3d11 -popupwindow %command%`.
   The native OpenGL build can crash with Parallax Continued.
 * Optional, not on CKAN: Blackrack's **True Volumetric Clouds** (Patreon). Remove `AstronomersVisualPack` first.
+* Run `./fix-craft.sh` to repair the stock craft files. See [Known issues](#known-issues).
+  `install.sh` already does this for you.
 
 ## Update
 
@@ -146,6 +148,59 @@ It feature... |
 | `OuterParallax-MPE` | OuterParallax-MPE | Adds Parallax Continued configs for MPE with custom assets. |
 | `KerbalKonstructs` | Kerbal Konstructs | New buildings and launch sites |
 | `KSCExtended` | KSC Extended | This is a collaboration between me and Omega482 to give you the best possible KSC exper... |
+
+## Known issues
+
+### Stock craft do not load
+
+**Symptom.** You click a stock aircraft in the SPH or VAB, and nothing happens. The craft never
+loads. The game shows no error message.
+
+**Cause.** KSP stores the game version inside every craft file. For a file older than 1.8.0,
+the game runs an upgrade script named `v180_ModuleControlSurface`. In a modded install that
+script throws a `NullReferenceException` and the load stops. The exception appears in `KSP.log`:
+
+```
+[EXC] NullReferenceException
+  SaveUpgradePipeline.v180_ModuleControlSurface.ConvertControlAuthority(...)
+  SaveUpgradePipeline.v180_ModuleControlSurface.OnUpgrade(...)
+  KSP.UI.Screens.CraftBrowserDialog.pipeSelectedItem(...)
+```
+
+A craft breaks when both conditions are true:
+
+* The version field is below 1.8.0.
+* The craft contains control surfaces.
+
+This is a bug in KSP itself. The mods only expose it. The parts load correctly, and no mod in
+this pack removes or replaces `ModuleControlSurface`.
+
+**Affected stock craft.** 23 files ship broken with KSP 1.12.5:
+
+| Version | Craft |
+|---------|-------|
+| 1.2.0 | Aeris 3A, Aeris 4A, Dove, Gull, Mallard, Osprey, Ravenspear Mk1, Ravenspear Mk3, Ravenspear Mk4, Skywinder AE1, Thunderbird, Velociteze |
+| 1.6.0 | AeroEquus, Albatross 3, ComSat Lx, Dynawing, Kerbal 1, Kerbal 2, Kerbal X, Learstar A1, Satellite Launcher, Slim Shuttle, Stearwing A300, Stratolauncher, Z-MAP Satellite Launch Kit |
+
+Your own craft break too, if you saved them before KSP 1.8.
+
+**Fix.**
+
+```sh
+./fix-craft.sh                              # finds a Steam install by itself
+./fix-craft.sh "/path/to/Kerbal Space Program"
+./fix-craft.sh --dry-run                    # list the files, change nothing
+```
+
+The script sets the version field to 1.12.5, so the upgrade pipeline skips the broken script.
+It copies every file it touches into `betterKSP-craft-backup-<timestamp>` inside the KSP folder.
+It changes one line per file and nothing else.
+
+**Run it again after a game update, or after "Verify integrity of game files".** Both restore
+the original craft files.
+
+**Side effect.** The control surface authority limiter keeps its old value. On these stock craft
+the difference is small. Adjust the slider in the editor if a plane handles badly.
 
 ## License
 
